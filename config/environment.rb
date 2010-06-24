@@ -55,8 +55,8 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_blog_session',
-    :secret      => 'b954626032189e6151d9ad34b7d4804639e7ba3fe70b04ab198bfdbd5dc87495c42e95cfa6a06bd415ba61905de8d7950b2449a690764ca335f10fd32aa418a3'
+    :session_key => '_bud_session',
+    :secret      => '6b3fcf08bc76bac9c47b61ed3a3f230426b34aa371fa64ddcb4a1aef69065318357becf502066b60d6ad57b061eb4ffdac14a81d6f6e4256155bc64380e9e677'
   }
 
   # Use the database for sessions instead of the cookie-based default,
