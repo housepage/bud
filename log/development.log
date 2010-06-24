@@ -1,0 +1,1019 @@
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:20:01) [GET]
+  [4;36;1mComputer Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: computers: SELECT * FROM "computers" [0m
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: computers: SELECT * FROM "computers" ):
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:188:in `log'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:372:in `catch_schema_changes'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:275:in `select'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:81:in `cache_sql'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:60:in `select_all'
+    /vendor/rails/activerecord/lib/active_record/base.rb:635:in `find_by_sql'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1490:in `find_every'
+    /vendor/rails/activerecord/lib/active_record/base.rb:589:in `find'
+    /app/controllers/computers_controller.rb:5:in `index'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (41.8ms)
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComputers (20100624071856)
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE TABLE "computers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "location" varchar(255), "last_seen" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100624071856')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("computers")[0m
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:21:03) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:21:08) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 67ms (View: 57, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#create (for 127.0.0.1 at 2010-06-24 00:21:17) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"0b1437e39805917f427e799394ec4580ae64c439", "computer"=>{"name"=>"Blah", "location"=>"The Tent", "last_seen(1i)"=>"2010", "last_seen(2i)"=>"6", "last_seen(3i)"=>"24"}}
+  [4;35;1mComputer Create (1.1ms)[0m   [0mINSERT INTO "computers" ("name", "location", "created_at", "updated_at", "last_seen") VALUES('Blah', 'The Tent', '2010-06-24 07:21:17', '2010-06-24 07:21:17', '2010-06-24')[0m
+Redirected to #<Computer:0xb6da9984>
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/computers]
+
+
+Processing ComputersController#show (for 127.0.0.1 at 2010-06-24 00:21:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mComputer Load (0.5ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+Rendering template within layouts/computers
+Rendering computers/show
+Completed in 74ms (View: 7, DB: 1) | 200 OK [http://localhost/computers/1]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:21:19) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:14) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:16) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:17) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:22) [GET]
+  [4;35;1mComputer Load (0.7ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:27) [GET]
+  [4;36;1mComputer Load (0.8ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:32) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 86ms (View: 77, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:37) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:42) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:47) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:52) [GET]
+  [4;35;1mComputer Load (0.7ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:28:57) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:02) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:08) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:13) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:18) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:23) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:28) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:33) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:38) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:43) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:48) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:53) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:29:58) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:04) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:09) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:14) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:19) [GET]
+  [4;36;1mComputer Load (0.9ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:24) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:29) [GET]
+  [4;36;1mComputer Load (0.7ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:34) [GET]
+  [4;35;1mComputer Load (0.8ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:39) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:44) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:49) [GET]
+  [4;36;1mComputer Load (0.6ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:30:54) [GET]
+  [4;35;1mComputer Load (0.6ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:30:56) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 29ms (View: 18, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:01) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 31ms (View: 20, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:06) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:11) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:17) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:22) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:27) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:32) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 28ms (View: 18, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:37) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 28ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:42) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 64ms (View: 42, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:47) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:52) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 29ms (View: 18, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:31:58) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:03) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 29ms (View: 18, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:08) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:13) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:18) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:23) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 28ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:28) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 27ms (View: 17, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:33) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 97ms (View: 87, DB: 0) | 200 OK [http://localhost/computers/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComputers (20100624071856)
+  [4;36;1mSQL (8.5ms)[0m   [0;1mDROP TABLE "computers"[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100624071856'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:32:38) [GET]
+
+
+ActiveRecord::StatementInvalid (Could not find table 'computers'):
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb:29:in `table_structure'
+    /vendor/rails/activesupport/lib/active_support/core_ext/object/misc.rb:39:in `returning'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb:28:in `table_structure'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/sqlite_adapter.rb:189:in `columns'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1220:in `columns'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2841:in `attributes_from_column_definition_without_lock'
+    /vendor/rails/activerecord/lib/active_record/locking/optimistic.rb:55:in `attributes_from_column_definition'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2281:in `initialize'
+    /app/controllers/computers_controller.rb:27:in `new'
+    /app/controllers/computers_controller.rb:27:in `new'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (28.6ms)
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.1ms)
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComputers (20100624073355)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE "computers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "location" varchar(255), "last_seen" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100624073355')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("computers")[0m
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:41:47) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 72ms (View: 62, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:41:56) [GET]
+  [4;36;1mComputer Load (0.4ms)[0m   [0;1mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/computers]
+
+
+Processing ComputersController#new (for 127.0.0.1 at 2010-06-24 00:41:58) [GET]
+Rendering template within layouts/computers
+Rendering computers/new
+Completed in 33ms (View: 22, DB: 0) | 200 OK [http://localhost/computers/new]
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2010-06-24 00:42:01) [GET]
+  [4;35;1mComputer Load (0.4ms)[0m   [0mSELECT * FROM "computers" [0m
+Rendering template within layouts/computers
+Rendering computers/index
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/computers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 11:54:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/whoa/new" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 11:54:40) [GET]
+
+
+ActionController::RoutingError (No route matches "/whoa" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComputers (20100624073355)
+Migrating to CreateWhoas (20100624185417)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+WARNING: geokit-rails requires the Geokit gem. You either don't have the gem installed,
+or you haven't told Rails to require it. If you're using a recent version of Rails: 
+  config.gem "geokit" # in config/environment.rb
+and of course install the gem: sudo gem install geokit
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComputers (20100624073355)
+Migrating to CreateWhoas (20100624185940)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComputers (20100624073355)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("computers")[0m
+
+
+Processing SandboxController#index (for 127.0.0.1 at 2010-06-24 12:16:27) [GET]
+
+
+ActionController::UnknownAction (No action responded to index. Actions: lookup_geocodes and show_google_map):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-06-24 12:16:34) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+
+
+NameError (uninitialized constant SandboxController::XMLRPC):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:102:in `const_missing'
+    /app/controllers/sandbox_controller.rb:43:in `get_geocode'
+    /app/controllers/sandbox_controller.rb:16:in `lookup_geocodes'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `each_with_index'
+    /app/controllers/sandbox_controller.rb:14:in `each'
+    /app/controllers/sandbox_controller.rb:14:in `each_with_index'
+    /app/controllers/sandbox_controller.rb:14:in `lookup_geocodes'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (27.4ms)
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.0ms)
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-06-24 12:20:32) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+
+
+NameError (uninitialized constant SandboxController::XMLRPC):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:102:in `const_missing'
+    /app/controllers/sandbox_controller.rb:43:in `get_geocode'
+    /app/controllers/sandbox_controller.rb:16:in `lookup_geocodes'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `each_with_index'
+    /app/controllers/sandbox_controller.rb:14:in `each'
+    /app/controllers/sandbox_controller.rb:14:in `each_with_index'
+    /app/controllers/sandbox_controller.rb:14:in `lookup_geocodes'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (26.3ms)
+Rendered /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (0.9ms)
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-06-24 12:22:01) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>555, "zip"=>94122, "prefix"=>"", "street"=>"Irving", "type"=>"St", "suffix"=>"", "lat"=>37.764075, "long"=>-122.463588, "state"=>"CA"}]]
+starting geocoder call for address: 1401 Valencia St, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>1401, "zip"=>94110, "prefix"=>"", "street"=>"Valencia", "type"=>"St", "suffix"=>"", "lat"=>37.75053, "long"=>-122.420681, "state"=>"CA"}]]
+starting geocoder call for address: 501 Cole St, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>501, "zip"=>94117, "prefix"=>"", "street"=>"Cole", "type"=>"St", "suffix"=>"", "lat"=>37.770529, "long"=>-122.450182, "state"=>"CA"}]]
+starting geocoder call for address: 150 Church st, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>150, "zip"=>94114, "prefix"=>"", "street"=>"Church", "type"=>"St", "suffix"=>"", "lat"=>37.768629, "long"=>-122.428782, "state"=>"CA"}]]
+Completed in 43874ms (View: 0, DB: 0) | 200 OK [http://localhost/sandbox/lookup_geocodes]
+
+
+Processing SandboxController#lookup_geocodes (for 127.0.0.1 at 2010-06-24 12:22:44) [GET]
+starting geocoder call for address: 555 Irving, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>555, "zip"=>94122, "prefix"=>"", "street"=>"Irving", "type"=>"St", "suffix"=>"", "lat"=>37.764075, "long"=>-122.463588, "state"=>"CA"}]]
+starting geocoder call for address: 1401 Valencia St, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>1401, "zip"=>94110, "prefix"=>"", "street"=>"Valencia", "type"=>"St", "suffix"=>"", "lat"=>37.75053, "long"=>-122.420681, "state"=>"CA"}]]
+starting geocoder call for address: 501 Cole St, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>501, "zip"=>94117, "prefix"=>"", "street"=>"Cole", "type"=>"St", "suffix"=>"", "lat"=>37.770529, "long"=>-122.450182, "state"=>"CA"}]]
+starting geocoder call for address: 150 Church st, San Francisco, CA
+Geocode call: [true, [{"city"=>"San Francisco", "number"=>150, "zip"=>94114, "prefix"=>"", "street"=>"Church", "type"=>"St", "suffix"=>"", "lat"=>37.768629, "long"=>-122.428782, "state"=>"CA"}]]
+Completed in 56302ms (View: 0, DB: 0) | 200 OK [http://localhost/sandbox/lookup_geocodes]
+
+
+Processing SandboxController#show_google_map (for 127.0.0.1 at 2010-06-24 12:24:25) [GET]
+Rendering sandbox/show_google_map
+
+
+ActionView::MissingTemplate (Missing template sandbox/show_google_map.erb in view path /home/aeg37/Projects/bud/app/views:):
+    /vendor/rails/actionpack/lib/action_view/template.rb:95:in `find_full_path'
+    /vendor/rails/actionpack/lib/action_view/template.rb:16:in `initialize'
+    /vendor/rails/actionpack/lib/action_view/base.rb:334:in `new'
+    /vendor/rails/actionpack/lib/action_view/base.rb:334:in `_unmemoized__pick_template'
+    /vendor/rails/activesupport/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/aeg37/Projects/bud/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)

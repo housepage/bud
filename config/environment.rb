@@ -59,6 +59,8 @@ Rails::Initializer.run do |config|
     :secret      => '6b3fcf08bc76bac9c47b61ed3a3f230426b34aa371fa64ddcb4a1aef69065318357becf502066b60d6ad57b061eb4ffdac14a81d6f6e4256155bc64380e9e677'
   }
 
+  config.gem "geokit"
+
   # Use the database for sessions instead of the cookie-based default,
   # which shouldn't be used to store highly confidential information
   # (create the session table with "rake db:sessions:create")
